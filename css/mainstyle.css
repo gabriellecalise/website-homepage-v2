@@ -1,0 +1,121 @@
+body { /* padding-top: 70px; ONLY HAVE THIS WITH THE NAVBAR*/
+ font-family: 'Open Sans', Helvetica sans-serif;
+ margin-body: 80px;
+}
+
+h1 {
+font-size:350%;
+font-weight: bold;
+
+}
+
+h2 {
+  font-size: 260%;
+}
+
+p {
+  font-size: 110%;
+}
+
+.nav {
+  margin: 25px;
+}
+
+
+.nav > li {
+  font-size: 120%;
+}
+
+ .titletab  {
+   background: #9cc;
+/* OLD BLUE  background: #8bb; */
+  padding: 10px;
+  margin: 25px;
+  width:25%
+}
+
+
+#gabriellecalise {
+text-decoration: none;
+}
+
+ #gabriellecalise > a{
+color: #000;
+}
+#gabriellecalise > a:hover{
+  text-decoration: none;
+}
+
+
+#face {
+    height: 100vh;
+    background: url('../images/gabrielle.jpg') no-repeat center center fixed;
+    background-size: 100%;
+  padding: 5px;
+
+}
+
+
+#about {
+  height: 450px;
+  padding: 25px;
+  background-color: #9cc;
+}
+
+.writing {
+  height: 600px;
+  padding-top: 90px;
+  background-color: #9cc;
+}
+
+.resume {
+  height: 900px;
+  padding-top: 90px;
+  background-color: #9cc;
+}
+
+ /*#about > h2 {
+   padding: 0px;
+}
+*/
+
+#contact_panel {
+  text-align: center;
+  height: 200px;
+  padding: 60px;
+}
+
+#projects {
+  padding: 100px 0px 10px 70px;
+  background-color: #9cc;
+
+  }
+
+/*
+ #projects > h2 {
+  background: #fff;
+  width:30%;
+   padding:0;
+}
+*/
+
+footer
+{ background-color: #323333;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  height: 80px;
+}
+
+
+@media (max-width: 600px) {
+  h1 {font-size: 150%;}
+  #face { background-color: #9cc;}
+  #about { height: 800px;}
+  #contact_panel {height:400px;}
+  .writing {padding-top:250px;
+        height:800px;}
+  .resume {padding-right:20px;}
+  object {width="200";
+    height="400";
+}
