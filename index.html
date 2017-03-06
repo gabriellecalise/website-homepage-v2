@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <title> Gabrielle Calise Home </title>
 	  <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="css/newmain.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -13,26 +13,61 @@
 
 <body>
 
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="http://gabriellecalise.com/"> GABRIELLE CALISE</a>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/writing.html">Writing</a></li>
+      <li><a href="/projects.html">Web apps</a></li>
+      <li><a href="/resume.html">Resume</a></li>
 
+    </ul>
+
+
+  </div>
+</nav>
+
+
+
+
+<!-- old navbar
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6">
           <h1 id="gabriellecalise"><a href="http://gabriellecalise.com/">GABRIELLE CALISE</a></h1>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+    </button>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="/writing.html">Writing</a></li>
-        <!--  <li><a href="#">Photo</a></li>
-          <li><a href="#">Multimedia</a></li> -->
+
+         <li><a href="#">Photo</a></li>
+          <li><a href="#">Multimedia</a></li>
+
+
           <li><a href="/projects.html">Web apps</a></li>
           <li><a href="/resume.html">Resume</a></li>
         </ul>
-      </div>
-    </div> <!-- row -->
-  </div> <!-- container -->
-</nav>
+        </div>
 
+      </div> collapse div
+    </div> row
+  </div> container
+</nav>
+-->
 
 <!-- Collect the nav links, forms, and other content for toggling -->
 <!--
@@ -72,8 +107,8 @@
          </ul>
        </li>
      </ul>
-   </div><!-- /.navbar-collapse -->
- </div><!-- /.container-fluid -->
+   </div>/.navbar-collapse
+ </div> /.container-fluid
 </nav>
 
 -->
@@ -98,11 +133,11 @@
     <h2>About Gabrielle</h2>
 
   <p>
-  Gabrielle Calise is a Gainesville-based multimedia storyteller studying journalism at the University of Florida. She worked as an editorial intern at Tower Publications, Tampa Bay Newspapers and The Gainesville Sun. She is currently completing multimedia journalism projects as an intern at the University of Florida News Department. </p>
+  Gabrielle Calise is a Gainesville-based storyteller studying journalism at the University of Florida. She worked as an editorial intern at Tower Publications, Tampa Bay Newspapers and The Gainesville Sun. She is currently completing multimedia journalism projects as an intern at the University of Florida News Department. </p>
 
   <p> Gabrielle has contributed articles and photographs to Tower Publications (Our Town Magazine and Senior Times Magazine), Tampa Bay Newspapers' eight regional publications, The Independent Florida Alligator, the Tampa Bay Times, the Gainesville Sun, the Fine Print and Sparks Magazine. She also worked as a producer and anchor for WUFT's News In 90.
 
-  Gabrielle is a Journalism and Communications Ambassador at the University of Florida and vice president of the Florida Magazine Student Association.
+  Gabrielle is a Journalism and Communications Ambassador at the University of Florida and the vice president of the Florida Magazine Student Association.
 
   An avid music fan, Gabrielle also founded the music blog <a href="https://swampsounds.wordpress.com/">Swamp Sounds</a> to profile the entertainment scene in Gainesville.
   </p>
@@ -110,9 +145,11 @@
   </div>
 </div>
 
+
+
 <div id="contact_panel">
   <div id="twitter">
-   <div class="col-md-3">
+   <div class="contact_button col-xs-6 col-sm-3 col-md-3">
 
      <a href="https://twitter.com/gabriellecalise" target="_blank"> <i class="fa fa-twitter-square fa-5x" aria-hidden="true"></i></a>
    </div>
@@ -120,7 +157,7 @@
 
 
   <div id="github">
-   <div class="col-md-3">
+   <div class="contact_button col-xs-6 col-sm-3 col-md-3">
      <a href="https://github.com/gabriellecalise
      " target="_blank"><i class="fa fa-github fa-5x" aria-hidden="true" ></i> </a>
    </div>
@@ -128,14 +165,14 @@
 
 
   <div id="linkedin">
-   <div class="col-md-3">
+   <div class="contact_button col-xs-6 col-sm-3 col-md-3">
      <a href="https://www.linkedin.com/in/gabriellecalise" target="_blank"> <i class="fa fa-linkedin-square fa-5x"  aria-hidden="true"></i></a>
    </div>
   </div>
 
 
-
-<a href="mailto:gcalise@ufl.edu" target="_blank"> <i class="fa fa-envelope fa-5x" aria-hidden="true"></i> </a>
+  <div class="contact_button col-xs-6 col-sm-3 col-md-3">
+    <a href="mailto:gcalise@ufl.edu" target="_blank"> <i class="fa fa-envelope fa-5x" aria-hidden="true"></i> </a>
 
 
   </div>

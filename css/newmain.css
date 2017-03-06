@@ -5,9 +5,8 @@ body { /* padding-top: 70px; ONLY HAVE THIS WITH THE NAVBAR*/
 }
 
 h1 {
-font-size:350%;
+font-size:450%;
 font-weight: bold;
-
 }
 
 h2 {
@@ -19,9 +18,20 @@ p {
   font-size: 110%;
 }
 
+
 .nav {
   margin: 25px;
 }
+
+
+
+
+.navbar-brand {
+font-weight: bold;
+ padding-top: 40px;
+ color: #222;
+}
+
 
 
 .nav > li {
@@ -65,7 +75,7 @@ color: #000;
 }
 
 .writing {
-  height: 1500px;
+  height: 1300px;
   padding-top: 110px;
   background-color: #9cc;
 }
@@ -117,12 +127,23 @@ footer
   height: 80px;
 }
 
+@media (min-width: 768px) {
+  .navbar-brand {font-size:270%;
+                  padding: 40px;}
+    #face {   background-size: cover;}
+
+  }
 
 @media (max-width: 600px) {
   h1 {font-size: 150%;}
-  #face { background-color: #9cc;}
+  .navbar-brand {font-size: 200%;
+                padding: 15px;}
+
+  #face {   background-size: cover;
+          /*background-color: #9cc;*/}
   #about { height: 800px;}
-  #contact_panel {height:400px;}
+  #contact_panel {height:350px;}
+  .contact_button {padding: 10px;}
   .writing {padding-top:250px;
         height:2400px;}
   .resume {padding-right:20px;}
