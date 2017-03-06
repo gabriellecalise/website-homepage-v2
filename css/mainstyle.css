@@ -1,6 +1,7 @@
 body { /* padding-top: 70px; ONLY HAVE THIS WITH THE NAVBAR*/
  font-family: 'Open Sans', Helvetica sans-serif;
  margin-body: 80px;
+
 }
 
 h1 {
@@ -11,6 +12,7 @@ font-weight: bold;
 
 h2 {
   font-size: 260%;
+  padding: 10px;
 }
 
 p {
@@ -63,11 +65,14 @@ color: #000;
 }
 
 .writing {
-  height: 600px;
-  padding-top: 90px;
+  height: 1300px;
+  padding-top: 110px;
   background-color: #9cc;
 }
 
+.portfolio_pic{
+  padding: 12px;
+}
 .resume {
   height: 900px;
   padding-top: 90px;
@@ -99,6 +104,11 @@ color: #000;
 }
 */
 
+
+.img-responsive {
+    margin: 0 auto;
+}
+
 footer
 { background-color: #323333;
   color: #fff;
@@ -114,7 +124,7 @@ footer
   #about { height: 800px;}
   #contact_panel {height:400px;}
   .writing {padding-top:250px;
-        height:800px;}
+        height:2400px;}
   .resume {padding-right:20px;}
   object {width="200";
     height="400";
