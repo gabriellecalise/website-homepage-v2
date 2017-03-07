@@ -1,6 +1,5 @@
 body { /* padding-top: 70px; ONLY HAVE THIS WITH THE NAVBAR*/
- font-family: 'Open Sans', Helvetica sans-serif;
- margin-body: 80px;
+ font-family: 'Open Sans', Helvetica, sans-serif;
 
 }
 
@@ -27,6 +26,8 @@ p {
 
 
 .navbar-brand {
+  font-size:250%;
+
 font-weight: bold;
  padding-top: 40px;
  color: #222;
@@ -36,6 +37,11 @@ font-weight: bold;
 
 .nav > li {
   font-size: 120%;
+}
+
+
+.navbar-static-top .navbar-collapse.in {
+    overflow-y: visible; /* Bootstrap default is "auto" */
 }
 
  .titletab  {
@@ -61,7 +67,7 @@ color: #000;
 
 #face {
     height: 100vh;
-    background: url('../images/gabrielle.jpg') no-repeat center center fixed;
+    background: url('../images/gabriellebig.jpg') no-repeat center center fixed;
     background-size: 100%;
   padding: 5px;
 
@@ -89,10 +95,6 @@ color: #000;
   background-color: #9cc;
 }
 
- /*#about > h2 {
-   padding: 0px;
-}
-*/
 
 #contact_panel {
   text-align: center;
@@ -106,13 +108,7 @@ color: #000;
 
   }
 
-/*
- #projects > h2 {
-  background: #fff;
-  width:30%;
-   padding:0;
-}
-*/
+
 
 
 .img-responsive {
@@ -127,26 +123,61 @@ footer
   height: 80px;
 }
 
-@media (min-width: 768px) {
+
+@media screen and (max-width: 992px) {
+    #parallax {
+        background-attachment: scroll;
+    }
+
+/*formerly min width*/
+@media (max-width: 768px) {
   .navbar-brand {font-size:270%;
                   padding: 40px;}
-    #face {   background-size: cover;}
+  #face {  background-size: auto 50%;
+            height: 1300px;
+            background-position: 50% 0px;
+            background-color: #9cc;
+}
 
-  }
+  .resume {height: 1200px;}
+
+}
 
 @media (max-width: 600px) {
   h1 {font-size: 150%;}
-  .navbar-brand {font-size: 200%;
+  .navbar-brand {font-size: 180%;
                 padding: 15px;}
 
-  #face {   background-size: cover;
-          /*background-color: #9cc;*/}
-  #about { height: 800px;}
+
+
+  #face {   background-size: auto 30%;
+            /* the 30% is what cropped the background image to show only that slice of your face. i used this blog -- if you ever need to do this again, here's how: https://www.sitepoint.com/css3-background-size-property/ and the sheep http://blogs.sitepointstatic.com/examples/tech/background-size/index.html */
+            background-position: 50% 0px; /*without this, you will have white space above the picture. i put it in the mobile and ipad mediaquery */
+            height: 660px;
+            background-color: #9cc; /* at the bottom there will be extra white space, so i added this */
+
+          /* works but too small  background-position: 50% 0px;
+                     height: 660px; */
+
+          /*background-size: 100px 200px; - if you do this, it will not show up at all */
+
+            /*this did NOT work --> background-size: cover; - do not do cover*/
+        }
+
+  /*#mobileface    {background-image: url("../images/mobilegab1.jpg");
+                height: 660px;
+                width: 100%;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-position: 50% 0px;
+                margin: 0px;
+                padding: 0px;}*/
+
+  #about { height: 1000px;}
   #contact_panel {height:350px;}
   .contact_button {padding: 10px;}
-  .writing {padding-top:250px;
-        height:2400px;}
+  .writing {padding-top:50px;
+        height:2600px;}
   .resume {padding-right:20px;}
-  object {width="200";
-    height="400";
+
 }

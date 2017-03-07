@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <title> Gabrielle Calise Home </title>
 	  <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="css/newmain.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -13,26 +13,25 @@
 
 <body>
 
+  <nav class="navbar navbar-default navbar-toggleable-md  navbar-fixed-top">
+    <div class="navbar-header">
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6">
-            <h1 id="gabriellecalise"><a href="http://gabriellecalise.com/">GABRIELLE CALISE</a></h1>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/writing.html">Writing</a></li>
-          <!--  <li><a href="#">Photo</a></li>
-            <li><a href="#">Multimedia</a></li> -->
-            <li><a href="/projects.html">Web apps</a></li>
-            <li><a href="/resume.html">Resume</a></li>
-          </ul>
-        </div>
-      </div> <!-- row -->
-    </div> <!-- container -->
+      <a class="navbar-brand" href="http://gabriellecalise.com/"> GABRIELLE CALISE</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      </div>
+
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/writing.html">Writing</a></li>
+          <li><a href="/projects.html">Web apps</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+        </ul>
+    </div>
   </nav>
-
 
 
 
@@ -41,12 +40,12 @@
 <div class="resume">
   <div class="col-md-6 col-md-offset-3">
     <h2> Resume </h2>
-    <object width="500" height="650" data="images/GabrielleCaliseResume.pdf"></object>
 
+      <p> Download a PDF of my resume <a href="images/GabrielleCaliseResume.pdf" target="_blank"> here.</a> </p>
 
-    <p> Download a PDF of my resume <a href="images/GabrielleCaliseResume.pdf" target="_blank"> here.</a> </p>
+    <!--<object data="images/GabrielleCaliseResume.pdf"></object> -->
 
-</div>
+  </div>
 </div>
 
 
@@ -57,6 +56,10 @@
     <p> © 2017 by Gabrielle Calise.</p>
   </footer>
 
+
+  <!-- don't forget to download the bootstrap.js file so that the toggle can work for the collapsable navbar -->
+    <script  src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 
 
 
