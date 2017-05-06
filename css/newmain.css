@@ -9,14 +9,20 @@ font-weight: bold;
 }
 
 h2 {
-  font-size: 260%;
+  font-size: 2em;
   padding: 10px;
 }
 
 p {
-  font-size: 110%;
+  font-size: 1.5em;
 }
 
+/* figure out underlining nonsense
+ a {
+  color: #255;
+  text-decoration: underline;
+}
+*/
 
 .nav {
   margin: 25px;
@@ -80,15 +86,35 @@ color: #000;
   background-color: #9cc;
 }
 
-.writing {
-  height: 1300px;
-  padding-top: 110px;
+
+
+.photowriting {
+  padding: 110px 30px 0px 30px;
   background-color: #9cc;
+}
+
+.writing {
+  height: 1000px;
+  padding: 0px 30px 30px 30px;
+  background-color: #9cc;
+}
+
+.projectlink {
+  font-size: 1.5em;
+}
+
+.projectlink > a {
+  color: #369;
+}
+
+.projectlink > a:hover {
+  color: #717;
 }
 
 .portfolio_pic{
   padding: 12px;
 }
+
 .resume {
   height: 900px;
   padding-top: 90px;
@@ -143,6 +169,10 @@ footer
 
 }
 
+.writing {
+  height: 2000px;
+}
+
 @media (max-width: 600px) {
   h1 {font-size: 150%;}
   .navbar-brand {font-size: 180%;
@@ -177,7 +207,7 @@ footer
   #contact_panel {height:350px;}
   .contact_button {padding: 10px;}
   .writing {padding-top:50px;
-        height:2600px;}
+        height:3500px;}
   .resume {padding-right:20px;}
 
 }
